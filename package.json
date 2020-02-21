@@ -1,0 +1,10 @@
+{
+  "name": "react-native-snapkit",
+  "version": "0.0.0",
+  "description": "React Native bindings for SnapKit",
+  "main": "index.js",
+  "repository": "git@github.com:safaiyeh/react-native-snapkit.git",
+  "author": "Jason Safaiyeh <safaiyeh@protonmail.com>",
+  "license": "MIT",
+  "private": false
+}
