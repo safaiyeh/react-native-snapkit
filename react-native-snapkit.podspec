@@ -3,17 +3,18 @@ require "json"
 package = JSON.parse(File.read(File.join(__dir__, "package.json")))
 
 Pod::Spec.new do |s|
-  s.name         = "reactnativesnapkit"
+  s.name         = "react-native-snapkit"
   s.version      = package["version"]
   s.summary      = package["description"]
   s.homepage     = package["homepage"]
   s.license      = package["license"]
   s.authors      = package["author"]
 
-  s.platforms    = { :ios => "9.0" }
+  s.platforms    = { :ios => "10.0" }
   s.source       = { :git => "https://github.com/safaiyeh/react-native-snapkit", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,m}"
 
   s.dependency "React"
+  s.dependency "SnapSDK"
 end

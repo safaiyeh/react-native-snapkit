@@ -1,6 +1,6 @@
 {
   "name": "react-native-snapkit",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "React Native bindings for SnapKit",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
