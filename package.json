@@ -1,6 +1,6 @@
 {
   "name": "react-native-snapkit",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "React Native bindings for SnapKit",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
@@ -21,7 +21,11 @@
     "example": "yarn --cwd example",
     "bootstrap": "yarn example && yarn && cd example/ios && pod install"
   },
-  "keywords": ["react-native", "ios", "android"],
+  "keywords": [
+    "react-native",
+    "ios",
+    "android"
+  ],
   "repository": "https://github.com/safaiyeh/react-native-snapkit",
   "author": "Jason Safaiyeh <safaiyeh@protonmail.com> (https://github.com/safaiyeh)",
   "license": "MIT",
@@ -30,13 +34,11 @@
   },
   "homepage": "https://github.com/safaiyeh/react-native-snapkit#readme",
   "devDependencies": {
-    "@commitlint/config-conventional": "^8.3.4",
     "@react-native-community/bob": "^0.9.7",
     "@react-native-community/eslint-config": "^0.0.7",
     "@types/jest": "^25.1.2",
     "@types/react": "^16.9.19",
     "@types/react-native": "0.61.10",
-    "commitlint": "^8.3.4",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
@@ -53,16 +55,20 @@
   },
   "jest": {
     "preset": "react-native",
-    "modulePathIgnorePatterns": ["<rootDir>/lib/"]
+    "modulePathIgnorePatterns": [
+      "<rootDir>/lib/"
+    ]
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "yarn lint && yarn typescript"
     }
   },
   "eslintConfig": {
-    "extends": ["@react-native-community", "prettier"],
+    "extends": [
+      "@react-native-community",
+      "prettier"
+    ],
     "rules": {
       "prettier/prettier": [
         "error",
@@ -75,9 +81,17 @@
       ]
     }
   },
+  "eslintIgnore": [
+    "node_modules/",
+    "lib"
+  ],
   "@react-native-community/bob": {
     "source": "src",
     "output": "lib",
-    "targets": ["commonjs", "module", "typescript"]
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
   }
 }
